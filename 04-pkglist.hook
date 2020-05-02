@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Creating /etc/pkglist/pkglist.txt
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pacman -Qqet > /etc/pkglist/pkglist.txt'
