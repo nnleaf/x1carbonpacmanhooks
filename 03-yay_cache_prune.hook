@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Pruning yay cached packages
 When = PostTransaction
-Exec = /home/nn/bin/tools/upgradehook
+Exec = /home/nn/bin/tools/yayprunecache
