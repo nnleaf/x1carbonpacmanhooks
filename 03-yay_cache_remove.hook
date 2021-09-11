@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Removing cached uninstalled yay packages
+When = PostTransaction
+Exec = /home/nn/bin/tools/yaycacheremove
