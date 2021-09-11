@@ -6,6 +6,6 @@ Type = Package
 Target = *
 
 [Action]
-Description = Pruning Pacman cached packages
+Description = Pruning yay cached packages
 When = PostTransaction
-Exec = /usr/bin/paccache -rk3
+Exec = /home/nn/bin/tools/upgradehook
